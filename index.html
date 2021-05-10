@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/basic.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
@@ -35,7 +39,7 @@
                                     <i class="header__category-icon fas fa-chevron-down"></i>
                                 </a>
                                 <ul class="header__home-list">
-                                    <li class="home__item active">Home Shop 1</li>
+                                    <li class="home__item active-orange">Home Shop 1</li>
                                     <li class="home__item">Home Shop 2</li>
                                     <li class="home__item">Home Shop 3</li>
                                     <li class="home__item">Home Shop 4</li>
@@ -233,6 +237,7 @@
                 <div class="app__content">
                     <!--  Slider 1 -->
                     <div class="slider">
+                        <img src="./assets/download-removebg-preview.png" alt="" class="slider__img">
                         <div class="slider__text">
                             <h3 class="text-heading">Wall Clock</h3>
                             <span class="text-label">Let your Wall reflect the luxurius side off you with our</span>
@@ -240,40 +245,45 @@
                         </div>
                         <a href="/" class="sider__btn">Shop Now</a>
                     </div>
-                    <div class="row sm-gutters navbar__shop">
+                    <!--  Navbar Shop -->
+                    <div class="row   navbar__shop">
                         <div class="col c-4 navbar__shop-item">
                             <div class="navbar__shop-has-img">
-                                <a href="/">
-                                    <img src="./assets/img/navbar__shop/img-category1.jpg" alt="" class="navbar__shop-img">
-                                </a>
+                                <img src="./assets/img/navbar__shop/img-category1.jpg" alt="" class="navbar__shop-img">
                             </div>
                             <div class="navbar__shop-info">
                                 <h3 class="navbar__shop-heading">Storage</h3>
                                 <a href="/" class="navbar__shop-link">Shop Now</a>
                             </div>
                         </div>
-                        <div class="col c-4 ">
+                        <div class="col c-4">
                             <div class="row no-gutters">
-                                <div class="col c-12 navbar__shop-item">
-                                    <img src="./assets/img/navbar__shop/img-category2.jpg" alt=""
-                                        class="navbar__shop-img">
-                                        <div class="navbar__shop-info">
-                                            <h3 class="navbar__shop-heading">Lighting</h3>
-                                            <a href="/" class="navbar__shop-link">Shop Now</a>
-                                        </div>
+                                <div class="col c-12 navbar__shop-item-two">
+                                    <div class="navbar__shop-has-img">
+                                        <img src="./assets/img/navbar__shop/img-category2.jpg" alt=""
+                                            class="navbar__shop-img img-two">
+                                    </div>
+                                    <div class="navbar__shop-info">
+                                        <h3 class="navbar__shop-heading">Lighting</h3>
+                                        <a href="/" class="navbar__shop-link">Shop Now</a>
+                                    </div>
                                 </div>
-                                <div class="col c-12 navbar__shop-item">
-                                    <img src="./assets/img/navbar__shop/img-category3.jpg" alt=""
-                                        class="navbar__shop-img img-mid">
-                                        <div class="navbar__shop-info">
-                                            <h3 class="navbar__shop-heading">Living Room</h3>
-                                            <a href="/" class="navbar__shop-link">Shop Now</a>
-                                        </div>
+                                <div class="col c-12 navbar__shop-item-two">
+                                    <div class="navbar__shop-has-img">
+                                        <img src="./assets/img/navbar__shop/img-category3.jpg" alt=""
+                                            class="navbar__shop-img img-two">
+                                    </div>
+                                    <div class="navbar__shop-info">
+                                        <h3 class="navbar__shop-heading">Living Room</h3>
+                                        <a href="/" class="navbar__shop-link">Shop Now</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col c-4 navbar__shop-item">
-                            <img src="./assets/img/navbar__shop/img-category4.jpg" alt="" class="navbar__shop-img">
+                            <div class="navbar__shop-has-img">
+                                <img src="./assets/img/navbar__shop/img-category4.jpg" alt="" class="navbar__shop-img">
+                            </div>
                             <div class="navbar__shop-info">
                                 <h3 class="navbar__shop-heading">Decoration</h3>
                                 <a href="/" class="navbar__shop-link">Shop Now</a>
@@ -281,24 +291,302 @@
 
                         </div>
                     </div>
+                    <!-- Product -->
                     <div class="home__product">
                         <div class="home__product-info">
                             <h3 class="home__product-heading">Featured Products</h3>
-                            <span class="home__product-lable">Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas.</span>
+                            <span class="home__product-lable">Mirum est notare quam littera gothica, quam nunc putamus
+                                parum claram anteposuerit litterarum formas.</span>
                             <div class="home__product-btn">
-                                <button class="">Decoration</button>
-                                <button class="">Lighting</button>
-                                <button class="">Storage</button>
+                                <button class="home__product-btn__item active-black">Decoration</button>
+                                <button class="home__product-btn__item">Lighting</button>
+                                <button class="home__product-btn__item">Storage</button>
                             </div>
+                            <div class="home__product-item">
+                                <div class="row  ">
+                                    <div class="col c-3">
+                                        <div class="home__product-item__img"
+                                            style="background-image: url(./assets/img/product/14.jpg);">
+                                            <div class="home__product-item__category">
+                                                <i class="home__product-item__category-icon fas fa-sliders-h"></i>
+                                                <i class="home__product-item__category-icon far fa-envelope"></i>
+                                                <i class="home__product-item__category-icon fas fa-shopping-bag"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home__product-item__info">
+                                            <div class="home__product-item__introduce">
+                                                <span>Furniture,</span>
+                                                <span>Sofa & Couches</span>
+                                            </div>
+                                            <div class="home__product-item__active">
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i class="home__product-item__active-star far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="home__product-item__heading">Long Earrings Women</h4>
+                                        <div class="home__product-item__price">
+                                            <span class="home__product-item__price-old">$80.00</span>
+                                            <span class="home__product-item__price-current">$70.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="col c-3">
+                                        <div class="home__product-item__img"
+                                            style="background-image: url(./assets/img/product/15.jpg);">
+                                            <div class="home__product-item__category">
+                                                <i class="home__product-item__category-icon fas fa-sliders-h"></i>
+                                                <i class="home__product-item__category-icon far fa-envelope"></i>
+                                                <i class="home__product-item__category-icon fas fa-shopping-bag"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home__product-item__info">
+                                            <div class="home__product-item__introduce">
+                                                <span>Bedroom Furniture,</span>
+                                                <span>Flaware</span>
+                                            </div>
+                                            <div class="home__product-item__active">
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i class="home__product-item__active-star far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="home__product-item__heading">Diamond Band Ring</h4>
+                                        <div class="home__product-item__price">
+                                            $86.00
+                                        </div>
+                                    </div>
+                                    <div class="col c-3">
+                                        <div class="home__product-item__img"
+                                            style="background-image: url(./assets/img/product/2.jpg);">
+                                            <div class="home__product-item__category">
+                                                <i class="home__product-item__category-icon fas fa-sliders-h"></i>
+                                                <i class="home__product-item__category-icon far fa-envelope"></i>
+                                                <i class="home__product-item__category-icon fas fa-shopping-bag"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home__product-item__info">
+                                            <div class="home__product-item__introduce">
+                                                <span>Furniture,</span>
+                                                <span>Runners</span>
+                                            </div>
+                                            <div class="home__product-item__active">
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i class="home__product-item__active-star far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="home__product-item__heading">Dissent Collar Earrings</h4>
+                                        <div class="home__product-item__price">
+                                            $95.00
+                                        </div>
+                                    </div>
+                                    <div class="col c-3">
+                                        <div class="home__product-item__img"
+                                            style="background-image: url(./assets/img/product/7.jpg);">
+                                            <div class="home__product-item__category">
+                                                <i class="home__product-item__category-icon fas fa-sliders-h"></i>
+                                                <i class="home__product-item__category-icon far fa-envelope"></i>
+                                                <i class="home__product-item__category-icon fas fa-shopping-bag"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home__product-item__info">
+                                            <div class="home__product-item__introduce">
+                                                <span>Candleholders,</span>
+                                                <span>Furniture</span>
+                                            </div>
+                                            <div class="home__product-item__active">
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i
+                                                    class="home__product-item__active-star active-yellow fas fa-star"></i>
+                                                <i class="home__product-item__active-star far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="home__product-item__heading">Diamond Band Ring</h4>
+                                        <div class="home__product-item__price">
+                                            $100.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  Review -->
+                    <div class="content__review">
+                        <img src="./assets/img/User/avt.jpg" alt="" class="content__review-img">
+                        <div class="content__review-comment">
+                            <span>All Perfect !! I have three sites with magento, this theme is the best !! Excellent
+                                support, advice theme installation package, sorry for <br>
+                                English, are italian but i had no problem !! Thank you ! </span>
+                        </div>
+                        <h3 class="content__review-name">Lee Minh</h3>
+                        <p class="content__review-info">Customer</p>
+                    </div>
+                    <!-- Shop Sale -->
+                    <div class="row   shop__sale">
+                        <div class="col c-6 ">
+                            <div class="shop__sale-item">
+                                <a href="/" class="shop__sale-item-img"
+                                    style="background-image: url(./assets/img/shop_sale/banner1-1.jpg);"></a>
+                                <div class="shop__sale-info">
+                                    <h3 class="shop__sale-name">Black friday</h3>
+                                    <h2 class="shop__sale-content">save up to <br> 50% off</h2>
+                                    <a href="/" class="shop__sale-shop">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col c-6 ">
+                            <div class="shop__sale-item">
+                                <a href="/" class="shop__sale-item-img"
+                                    style="background-image: url(./assets/img/shop_sale/banner1-2.jpg);"></a>
+                                <div class="shop__sale-info">
+                                    <h3 class="shop__sale-name">best selling</h3>
+                                    <h2 class="shop__sale-content">living room<br> up to 70% off</h2>
+                                    <a href="/" class="shop__sale-shop">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service -->
+                    <div class="row   shop__service">
+                        <div class="col c-4 shop__service-item">
+                            <div class="shop__service-img"
+                                style="background-image: url(./assets/img/Service/icon_policy4-51x53.png);width: 51px; height: 53px;">
+                            </div>
+                            <h3 class="shop__service-name">FREE SHIPPING WORLDWIDE</h3>
+                            <span class="shop__service-info">Mirum Est Notare Quam Littera Gothica, Quam Nunc <br>
+                                Putamus Parum Claram</span>
+                        </div>
+                        <div class="col c-4 shop__service-item">
+                            <div class="shop__service-img"
+                                style="background-image: url(./assets/img/Service/icon_policy5-52x53.png); width: 52px; height: 53px;">
+                            </div>
+                            <h3 class="shop__service-name">MONEY BACK GUARANTEE</h3>
+                            <span class="shop__service-info">Mirum Est Notare Quam Littera Gothica, Quam Nunc <br>
+                                Putamus Parum Claram</span>
+                        </div>
+                        <div class="col c-4 shop__service-item">
+                            <div class="shop__service-img"
+                                style="background-image: url(./assets/img/Service/icon_policy6-48x53.png); width: 48px; height: 53px;">
+                            </div>
+                            <h3 class="shop__service-name">ONLINE SUPPORT 24/7</h3>
+                            <span class="shop__service-info">Mirum Est Notare Quam Littera Gothica, Quam Nunc <br>
+                                Putamus Parum Claram</span>
+                        </div>
+                    </div>
+                    <!-- Home Blog -->
+                    <div class="home__blog">
+                        <h3 class="home__blog-name">From Our Blog</h3>
+                        <p class="home__blog-label">Mirum est notare quam littera gothica, quam nunc putamus parum
+                            claram anteposuerit litterarum formas.</p>
+                        <div class="row  ">
+                            <div class="col c-4 home__blog-list">
+                                <div class="home__blog-item">
+                                    <img src="./assets/img/home__blog/blog-6.jpg" alt="" class="home__blog-item-img">
+                                    <div class="home__blog-item-celendar">
+                                        <span class="home__blog-item-month">April</span>
+                                        <span class="home__blog-item-date">25</span>
+                                    </div>
+                                </div>
+                                <a href="/" class="home__blog-list-name">Quisque Egestas</a>
+                                <p class="home__blog-list-authur">By <span>Admin</span> in <span>Bed</span>,
+                                    <span>Chair</span>, <span>Decor</span>, <span>Kitchen</span></p>
+                                <p class="home__blog-list-info">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Paraesent</p>
+                                <div class="home__blog-list-active">
+                                    <a href="/" class="home__blog-active-read">read more</a>
+                                    <a href="/" class="home__blog-active-comment">0 Comments</a>
+                                </div>
+                            </div>
+                            <div class="col c-4 home__blog-list">
+                                <div class="home__blog-item">
+                                    <img src="./assets/img/home__blog/blog-7.jpg" alt="" class="home__blog-item-img">
+                                    <div class="home__blog-item-celendar">
+                                        <span class="home__blog-item-month">April</span>
+                                        <span class="home__blog-item-date">24</span>
+                                    </div>
+                                </div>
+                                <a href="/" class="home__blog-list-name">Post With Gallery</a>
+                                <p class="home__blog-list-authur">By <span>Admin</span> in <span>Bed</span>,
+                                    <span>Chair</span>, <span>Decor</span>, <span>Lamp</span>, <span>Table</span></p>
+                                <p class="home__blog-list-info">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Paraesent</p>
+                                <div class="home__blog-list-active">
+                                    <a href="/" class="home__blog-active-read">read more</a>
+                                    <a href="/" class="home__blog-active-comment">10 Comments</a>
+                                </div>
+                            </div>
+                            <div class="col c-4 home__blog-list">
+                                <div class="home__blog-item">
+                                    <img src="./assets/img/home__blog/blog-8.jpg" alt="" class="home__blog-item-img">
+                                    <div class="home__blog-item-celendar">
+                                        <span class="home__blog-item-month">April</span>
+                                        <span class="home__blog-item-date">24</span>
+                                    </div>
+                                </div>
+                                <a href="/" class="home__blog-list-name">Maecenas Ultricies</a>
+                                <p class="home__blog-list-authur">By <span>Admin</span> in <span>Decor</span>,
+                                    <span>Kitchen</span>, <span>Lamp</span></p>
+                                <p class="home__blog-list-info">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Paraesent</p>
+                                <div class="home__blog-list-active">
+                                    <a href="/" class="home__blog-active-read">read more</a>
+                                    <a href="/" class="home__blog-active-comment">100 Comments</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Shop Contact -->
+                    <div class="shop__contact">
+                        <p class="">Special Ofers For Subscribers</p>
+                        <h3 class="shop__contact-name">Ten Percent Member Discount</h3>
+                        <p class="shop__contacr-info">Subscribe to our newsletters now and stay up to date with new
+                            collections, the latest lookbooks and exclusive offers.</p>
+                        <div class="shop__contact-item">
+                            <input type="email" class="shop__contact-input" id="" placeholder="Your email address...">
+                            <a href="/" class="shop__contact-link">Subscribe</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <footer class="footer">
+            <footer class="footer">
+                <div class="grid wide ">
+                    <div class="footer__authur">
+                        <img src="./assets/img/header-logo/logo_new.png" alt="" class="footer__authur-img">
+                        <p class="footer__authur-text">Copyright © <span>Lê Minh</span>. All Right Reserved.</p>
 
-        </footer>
-    </div>
+                        <div class="footer__social">
+                            <i class="footer__social-icon fab fa-facebook-f"></i>
+                            <i class="footer__social-icon fab fa-twitter"></i>
+                            <i class="footer__social-icon fab fa-instagram"></i>
+                            <i class="footer__social-icon fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
 </body>
 
 </html>
