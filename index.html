@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/basic.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
@@ -27,13 +30,169 @@
         <header class="header">
             <div class="grid wide">
                 <div class="header__navbar">
+
+                    <!-- Category Mobile Tablet -->
+
+                    <label for="mobile-menu-checkbox" class="header__mobile-menu">
+                        <i class="header__bar-icon fas fa-bars"></i>
+                    </label>
+                    <input type="checkbox" hidden id="mobile-menu-checkbox">
+                    <label for="mobile-menu-checkbox" class="modal-mobile"></label>
+                    <div class="category-mobile-menu">
+                        <label for="mobile-menu-checkbox" class="category-mobile-menu-close">&times;</label>
+                        <div class="category-mobile-search">
+                            <input type="text" placeholder="Search Product..." class="header-mobile-search-input">
+                            <i class="header__search-icon fas fa-search"></i>
+                        </div>
+                        <ul class="category-mobile-list">
+                            <label for="menu-home-checkbox" class="category-mobile-home">
+                                <input type="checkbox" hidden id="menu-home-checkbox">
+                                <div class="category-mobile-info">
+                                    <h3 class="category-mobile-name">Home</h3>
+                                    <div class="category-right-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                                <ul class="category-mobile-home-list">
+                                    <li class="category-mobile-item">Home Shop 1</li>
+                                    <li class="category-mobile-item">Home Shop 2</li>
+                                    <li class="category-mobile-item">Home Shop 3</li>
+                                    <li class="category-mobile-item">Home Shop 4</li>
+                                </ul>
+                            </label>
+                            <label for="menu-shop-checkbox" class="category-mobile-shop">
+                                <input type="checkbox" hidden id="menu-shop-checkbox">
+                                <div class="category-mobile-info">
+                                    <h3 class="category-mobile-name">Shop</h3>
+                                    <div class="category-right-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                                <ul class="category-mobile-shop-list">
+                                    <label for="shop-sidebar-checkbox" class="category-mobile-item">Shop Sidebar
+                                        <input type="checkbox" hidden id="shop-sidebar-checkbox">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <div class="shop__layout-list">
+                                            <a href="" class="shop-item" style="text-decoration:none;">Sidebar Left</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">Sidebar Right</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">Full Width</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">List View</a>
+                                        </div>
+                                    </label>
+                                    <label for="shop-pages-checkbox" class="category-mobile-item">Shop Pages
+                                        <input type="checkbox" hidden id="shop-pages-checkbox">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <div class="shop__pages-list">
+                                            <a href="" class="shop-item" style="text-decoration:none;">Category -
+                                                unfinished</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">My Account</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">Wish List</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">Cart</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">Checkout</a>
+                                        </div>
+                                    </label>
+                                    <label for="shop-product-checkbox" class="category-mobile-item">Product Types
+                                        <input type="checkbox" hidden id="shop-product-checkbox">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <div class="shop__product-list">
+                                            <a href="" class="shop-item" style="text-decoration:none;">Simple Product -
+                                                unfinished</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">Grouped Product -
+                                                unfinished</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">Variable Product
+                                                - unfinished</a>
+                                            <a href="" class="shop-item" style="text-decoration:none;">External Product
+                                                - unfinished</a>
+                                        </div>
+                                    </label>
+                                </ul>
+                            </label>
+                            <label for="menu-blog-checkbox" class="category-mobile-blog">
+                                <input type="checkbox" hidden id="menu-blog-checkbox">
+                                <div class="category-mobile-info">
+                                    <h3 class="category-mobile-name">Blog</h3>
+                                    <div class="category-right-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                                <ul class="category-mobile-blog-list">
+                                    <label for="blog-layouts-checkbox" class="category-mobile-item">Blog Layouts
+                                        <input type="checkbox" hidden id="blog-layouts-checkbox">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <div class="blog__layout-list">
+                                            <a href="" class="blog-item" style="text-decoration:none;">Sidebar Left</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">Sidebar Right</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">Large Image</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">Blog Grid</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">No Sidebar</a>
+                                        </div>
+                                    </label>
+                                    <label for="blog-pages-checkbox" class="category-mobile-item">Blog Pages
+                                        <input type="checkbox" hidden id="blog-pages-checkbox">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <div class="blog__pages-list">
+                                            <a href="" class="blog-item" style="text-decoration:none;">Authur</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">Archives</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">Category</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">Blog Tag</a>
+                                        </div>
+                                    </label>
+                                    <label for="blog-post-checkbox" class="category-mobile-item">Post Format
+                                        <input type="checkbox" hidden id="blog-post-checkbox">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <div class="blog__format-list">
+                                            <a href="" class="blog-item" style="text-decoration:none;">Image Format</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">Gelly Format</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">Audio Format</a>
+                                            <a href="" class="blog-item" style="text-decoration:none;">Video Format</a>
+                                        </div>
+                                    </label>
+                                </ul>
+                                <label for="menu-pages-checkbox" class="category-mobile-pages">
+                                    <input type="checkbox" hidden id="menu-pages-checkbox">
+                                    <div class="category-mobile-info">
+                                        <h3 class="category-mobile-name">Pages</h3>
+                                        <div class="category-right-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                    <ul class="category-mobile-pages-list">
+                                        <li class="category-mobile-item">Frequently Questions</li>
+                                        <li class="category-mobile-item">Privacy Policy</li>
+                                        <li class="category-mobile-item">Error 404</li>
+                                    </ul>
+                                </label>
+                                <li class="category-mobile-about">
+                                    <div class="category-mobile-info">
+                                        <h3 class="category-mobile-name">About Us</h3>
+                                    </div>
+                                </li>
+                                <li class="category-mobile-contact">
+                                    <div class="category-mobile-info">
+                                        <h3 class="category-mobile-name">Contact</h3>
+                                    </div>
+                                </li>
+                        </ul>
+                        <div class="category-user">
+                            <div class="category-user-heading">
+                                <h3>My Account</h3>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <a href="" class="category-user-link">My Account</a>
+                            <a href="" class="category-user-link">Cart</a>
+                            <a href="" class="category-user-link">Wishlist</a>
+                            <a href="" class="category-user-link">Checkout</a>
+                        </div>
+
+
+                    </div>
                     <div class="header__logo">
                         <a href="/" class="header__logo-link">
                             <img src="./assets/img/header-logo/logo_new.png" alt="Logo" class="header__logo-img">
                         </a>
                     </div>
                     <div class="header__category">
-                        <ul class="header__category-list">
+                        <ul class="header__category-list hide-on-mobile-tablet">
                             <li class="header__category-item header__home">
                                 <a href="" class="header__category-link">HOME
                                     <i class="header__category-icon fas fa-chevron-down"></i>
@@ -119,7 +278,7 @@
                             </li>
                         </ul>
                         <ul class="header__list">
-                            <li class="header__item  header__search">
+                            <li class="header__item  header__search hide-on-mobile-tablet">
                                 <a href="" class="header__item-link">
                                     <i class="header__item-icon fas fa-search"></i>
                                 </a>
@@ -128,11 +287,13 @@
                                     <i class="header__search-icon fas fa-search"></i>
                                 </div>
                             </li>
-                            <li class="header__item header__cart">
-                                <a href="" class="header__item-link">
+                            <label for="mobile-cart-checkbox" class="header__item header__cart">
+                                <input type="checkbox" hidden id="mobile-cart-checkbox">
+                                <label for="mobile-cart-checkbox" class="modal-mobile"></label>
+                                <div class="header__item-link">
                                     <i class="header__item-icon fas fa-shopping-bag"></i>
                                     <span class="header__cart-quantity">4</span>
-                                </a>
+                                </div>
                                 <ul class="header__cart-list">
                                     <div class="header__cart-list-item">
                                         <li class="header__cart-item">
@@ -207,8 +368,8 @@
                                         <span>CHECKOUT</span>
                                     </a>
                                 </ul>
-                            </li>
-                            <li class="header__item header__menu">
+                            </label>
+                            <li class="header__item header__menu hide-on-mobile-tablet">
                                 <a href="" class="header__item-link">
                                     <i class="header__item-icon header__bar-icon fas fa-bars"></i>
                                 </a>
@@ -247,7 +408,7 @@
                     </div>
                     <!--  Navbar Shop -->
                     <div class="row   navbar__shop">
-                        <div class="col c-4 navbar__shop-item">
+                        <div class="col c-4 m-12  navbar__shop-item">
                             <div class="navbar__shop-has-img">
                                 <img src="./assets/img/navbar__shop/img-category1.jpg" alt="" class="navbar__shop-img">
                             </div>
@@ -256,9 +417,9 @@
                                 <a href="/" class="navbar__shop-link">Shop Now</a>
                             </div>
                         </div>
-                        <div class="col c-4">
-                            <div class="row no-gutters">
-                                <div class="col c-12 navbar__shop-item-two">
+                        <div class="col c-4 m-12 ">
+                            <div class="row sm-gutter">
+                                <div class="col c-12 m-12 navbar__shop-item-two">
                                     <div class="navbar__shop-has-img">
                                         <img src="./assets/img/navbar__shop/img-category2.jpg" alt=""
                                             class="navbar__shop-img img-two">
@@ -268,7 +429,7 @@
                                         <a href="/" class="navbar__shop-link">Shop Now</a>
                                     </div>
                                 </div>
-                                <div class="col c-12 navbar__shop-item-two">
+                                <div class="col c-12 m-12 navbar__shop-item-two">
                                     <div class="navbar__shop-has-img">
                                         <img src="./assets/img/navbar__shop/img-category3.jpg" alt=""
                                             class="navbar__shop-img img-two">
@@ -280,7 +441,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col c-4 navbar__shop-item">
+                        <div class="col c-4 m-12 navbar__shop-item">
                             <div class="navbar__shop-has-img">
                                 <img src="./assets/img/navbar__shop/img-category4.jpg" alt="" class="navbar__shop-img">
                             </div>
@@ -512,7 +673,8 @@
                                 </div>
                                 <a href="/" class="home__blog-list-name">Quisque Egestas</a>
                                 <p class="home__blog-list-authur">By <span>Admin</span> in <span>Bed</span>,
-                                    <span>Chair</span>, <span>Decor</span>, <span>Kitchen</span></p>
+                                    <span>Chair</span>, <span>Decor</span>, <span>Kitchen</span>
+                                </p>
                                 <p class="home__blog-list-info">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
                                     pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Paraesent</p>
                                 <div class="home__blog-list-active">
@@ -530,7 +692,8 @@
                                 </div>
                                 <a href="/" class="home__blog-list-name">Post With Gallery</a>
                                 <p class="home__blog-list-authur">By <span>Admin</span> in <span>Bed</span>,
-                                    <span>Chair</span>, <span>Decor</span>, <span>Lamp</span>, <span>Table</span></p>
+                                    <span>Chair</span>, <span>Decor</span>, <span>Lamp</span>, <span>Table</span>
+                                </p>
                                 <p class="home__blog-list-info">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
                                     pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Paraesent</p>
                                 <div class="home__blog-list-active">
@@ -548,7 +711,8 @@
                                 </div>
                                 <a href="/" class="home__blog-list-name">Maecenas Ultricies</a>
                                 <p class="home__blog-list-authur">By <span>Admin</span> in <span>Decor</span>,
-                                    <span>Kitchen</span>, <span>Lamp</span></p>
+                                    <span>Kitchen</span>, <span>Lamp</span>
+                                </p>
                                 <p class="home__blog-list-info">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
                                     pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Paraesent</p>
                                 <div class="home__blog-list-active">
@@ -587,6 +751,7 @@
                 </div>
             </footer>
         </div>
+
 </body>
 
 </html>

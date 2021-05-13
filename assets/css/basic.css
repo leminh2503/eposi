@@ -54,6 +54,9 @@ html{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.app{
+    overflow: hidden;
+}
 .active-black{
     background-color: #292929;
     color: #fff;
@@ -83,4 +86,14 @@ html{
 }
 .btn:hover span{
     color: #fff;
+}
+.modal-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f1e9e969;
+    z-index: 10;
+    display: none;
 }
