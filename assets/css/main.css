@@ -97,7 +97,7 @@
 }
 .category-mobile-item i{
     float: right;
-    padding: 6px 24px;
+    padding:0 24px;
 }
 .shop__layout-list,
 .shop__pages-list,
@@ -144,8 +144,9 @@
 .category-user-link{
     display: block;
     font-size: 1.4rem;
-    padding:0 8px ;
+    padding:4px 8px ;
     color: #69696980;
+    text-decoration: none;
 }
 .category-mobile-home-list,
 .category-mobile-shop-list,
@@ -670,39 +671,48 @@
     overflow: hidden;
 }
 .navbar__shop-item{
+    height: 400px;
     display: block;
-    max-width: 100%;
     transition: all ease-in 0.03s;
     position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.navbar__shop-img{
+    overflow: hidden;
+    height: 100%;
 }
 .navbar__shop-item-two{
+    display: block;
     position: relative;
+}
+.navbar__shop-has-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+.navbar__shop-has-img-two{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 190px;
 }
 .navbar__shop-item-two:first-child{
     margin-bottom: 10px;
 }
+
 .navbar__shop-item-two:last-child{
     margin-top: 10px;
 }
-.navbar__shop-img{
-    width: 380px;
-    object-fit: cover;
-}
-.navbar__shop-has-img{
-    height: 100%;
-    overflow: hidden;
-}
-.navbar__shop-item:hover .navbar__shop-has-img{
-    overflow: hidden;
-}
-.navbar__shop-item:hover .navbar__shop-img{
+.navbar__shop-has-img:hover{
     cursor: pointer;
     animation: scaleImg 0.3s ease-in forwards;
 }
 .navbar__shop-item-two:hover .navbar__shop-has-img{
     overflow: hidden;
 }
-.navbar__shop-item-two:hover .navbar__shop-img{
+.navbar__shop-has-img-two:hover{
     cursor: pointer;
     animation: scaleImg 0.3s ease-in forwards;
 }
@@ -802,7 +812,7 @@
     height: 360px;
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: contain;
+    background-size: 100% 100%;
     position: relative;
 }
 .home__product-item__img:hover .home__product-item__category{
@@ -842,6 +852,10 @@
 .home__product-item__introduce span:hover{
     color: #292929;
     cursor: pointer;
+}
+.home__product-item__active{
+    display: flex;
+    align-items: center;
 }
 .home__product-item__active-star{
     color: #ecdd10;
@@ -930,15 +944,14 @@
 .shop__sale-item{
     overflow: hidden;
     position: relative;
+    margin: 20px 0 0 0 ;
 }
 .shop__sale-item-img{
     height: 318px;
     display: block;
-    max-height: 100%;
-    max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .shop__sale-item-img:hover{
     animation: scaleImg linear 0.3s forwards;
